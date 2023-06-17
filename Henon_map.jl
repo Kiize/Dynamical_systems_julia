@@ -4,19 +4,20 @@ using DynamicalSystemsBase
 
 #plotlyjs()  #We define the backend for the plots 
 
-#=
+"""
 First we want to show the henon map
-=#
+"""
+
+"""
+u : initial state
+p : parameters
+n : time
+"""
 function henon_rule(u, p, n) 
-    #=
-    n : time
-    u : initial state
-    p : parameters
-    =#
     x, y = u 
     a, b = p 
     xn = 1. - a*x^2 + y
-    yn = b*x    # henon rule
+    yn = b*x
     return SVector(xn, yn)
 end
 
