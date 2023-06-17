@@ -2,12 +2,6 @@ using DynamicalSystems
 using GLMakie
 using DynamicalSystemsBase
 
-#plotlyjs()  #We define the backend for the plots 
-
-"""
-First we want to show the henon map
-"""
-
 """
 u : initial state
 p : parameters
