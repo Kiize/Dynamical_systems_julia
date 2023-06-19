@@ -40,7 +40,7 @@ u0 = rand(5)
 
 lorenz96 = ContinuousDynamicalSystem(Lorenz_rule, u0, F)
 
-traj = trajectory(lorenz96, 100.)
+traj = trajectory(lorenz96, 100.; Δt = 0.01)
 x, y, z = columns(traj[1])
-fig = lines(x, y, z, color = :blue)
+fig = lines(x, y, z, color = :deepskyblue)
 display(fig)
