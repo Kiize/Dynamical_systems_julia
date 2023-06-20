@@ -21,5 +21,6 @@ u0 = [.2, .3]
 henon = DiscreteDynamicalSystem(henon_rule, u0, p)
 henon_traj = trajectory(henon, 10000)
 x, y = columns(henon_traj[1])
-scatter(x, y, markersize = 2) 
+fig = scatter(x, y, markersize = 2) 
+save("henonmap.png", fig)
 
